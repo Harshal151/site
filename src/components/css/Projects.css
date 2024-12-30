@@ -1,0 +1,221 @@
+.projects {
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.projects-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.project-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 2rem; /* Added left and right padding */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.project-grid::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.show-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.show-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.project-card {
+  flex: 0 0 auto;
+  width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.scroll-arrow:hover {
+  opacity: 1;
+  background-color: #1e293b;
+}
+
+.scroll-arrow.left {
+  left: 20px; /* Positioned outside the card container */
+}
+
+.scroll-arrow.right {
+  right: 20px; /* Positioned outside the card container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    width: 250px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .scroll-arrow.left {
+    left: 10px;
+  }
+
+  .scroll-arrow.right {
+    right: 10px;
+  }
+  .project-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 200px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.7rem;
+  }
+
+  .scroll-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .scroll-arrow.left {
+    left: 5px;
+  }
+
+  .scroll-arrow.right {
+    right: 5px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links1 h4,
+.footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #f8b400;
+}
+
+.footer-links1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links1 li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links1 a {  
+  color: #f8b400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links1 a:hover {
+  color: #2100f8;
+}

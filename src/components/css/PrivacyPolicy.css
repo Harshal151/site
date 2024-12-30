@@ -1,0 +1,119 @@
+/* Privacy Policy Page Specific Styles */
+
+.privacy-policy {
+    text-align: left; /* Ensure text is aligned left for the privacy policy */
+  }
+.privacy-policy {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Heading Styles */
+  .privacy-policy h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-top: 30px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  /* Paragraphs and Text */
+  .privacy-policy .intro-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .privacy-policy .consent-text {
+    font-size: 18px;
+    color: #555;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  /* List Styling */
+  .privacy-policy ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  
+  .privacy-policy ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-policy ul li:before {
+    content: "• ";
+    color: #007bff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Section Styling */
+  .privacy-policy .section {
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .privacy-policy {
+      padding: 20px;
+    }
+  
+    .privacy-policy h1 {
+      font-size: 28px;
+    }
+  
+    .privacy-policy h2 {
+      font-size: 22px;
+    }
+  
+    .privacy-policy .intro-text, .privacy-policy .consent-text {
+      font-size: 16px;
+    }
+  
+    .privacy-policy ul li {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .privacy-policy {
+      padding: 15px;
+    }
+  
+    .privacy-policy h1 {
+      font-size: 24px;
+    }
+  
+    .privacy-policy h2 {
+      font-size: 20px;
+    }
+  
+    .privacy-policy .intro-text, .privacy-policy .consent-text {
+      font-size: 14px;
+    }
+  
+    .privacy-policy ul li {
+      font-size: 12px;
+    }
+  }
+  
